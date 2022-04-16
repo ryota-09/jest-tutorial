@@ -16,7 +16,7 @@ describe("HomeView.vueの単体テスト", () => {
       const num2 = num1 + 4;
       // 100じゃなかったらテストがPassする。
       expect(num2).not.toBe(100);
-    })
+    });
   });
 
   describe("toContain関数のサンプル", () => {
@@ -29,7 +29,25 @@ describe("HomeView.vueの単体テスト", () => {
       const array = [0, 1, 2, 3];
       expect(array).toContain(2);
     });
-  })
+  });
+
+  describe("toEqual関数のサンプル", () => {
+    const object1 = {
+      name: "山田たろう",
+      age: 18,
+    };
+    const object2 = {
+      name: "山田たろう",
+      age: 18,
+    };
+    // オブジェクトの一致を確認するのはtoEqualを使う。全てのプロパティで===を確認している。
+    test("toEqualの挙動", () => {
+      expect(object1).toEqual(object2);
+    });
+    // test("toBeの挙動", () => {
+    //   expect(object1).toBe(object2);
+    // });
+  });
 });
 // npm run test でテストを動かす。
 //常時動かしたい時は npm run test:watch
