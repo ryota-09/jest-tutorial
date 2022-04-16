@@ -14,6 +14,13 @@
   <p> <b>単体テスト</b>でJestを利用する</p>
   <a href="https://pm-rasinban.com/ut-it-st">引用サイト</a>
   <hr>
+  <h3>テストの必要性</h3>
+  <p>開発中の簡易テストはconsole.logで行っている。</p>
+  <p>しかし、この方法では問題がある。</p>
+  <p>コードの変更を加えた時、不具合がないか確認するために行うリグレッションテストができない。</p>
+  <a href="https://hnavi.co.jp/knowledge/blog/regression-test/">引用サイト</a>
+  <p></p>
+  <hr>
   <h3>Vueの単体テスト</h3>
   <p><b>・scriptタグのメソッドのテスト</b></p>
   <p>基本的に全てのメソッドに関するテスト。ここでJestを使う。</p>
