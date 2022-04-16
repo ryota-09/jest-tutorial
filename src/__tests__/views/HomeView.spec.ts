@@ -17,6 +17,18 @@ describe("HomeView.vueの単体テスト", () => {
       // 100じゃなかったらテストがPassする。
       expect(num2).not.toBe(100);
     })
+  });
+
+  describe("toContain関数のサンプル", () => {
+    test("textに山田が含まれている。", () => {
+      const text = "山田たろう";
+      expect(text).toContain("山田");
+    });
+
+    test("arrayに2が含まれている。", () => {
+      const array = [0, 1, 2, 3];
+      expect(array).toContain(2);
+    });
   })
 });
 // npm run test でテストを動かす。
