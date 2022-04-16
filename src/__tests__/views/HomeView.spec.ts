@@ -30,7 +30,7 @@ describe("HomeView.vueの単体テスト", () => {
       expect(array).toContain(2);
     });
   });
-
+  // describe.only とするとdescribeを個別にテストできる。
   describe("toEqual関数のサンプル", () => {
     const object1 = {
       name: "山田たろう",
@@ -48,6 +48,25 @@ describe("HomeView.vueの単体テスト", () => {
     //   expect(object1).toBe(object2);
     // });
   });
+
+  describe("beforeEachのサンプルメソッド",() => {
+    let count = 0;
+
+    // beforeEach(() => {
+    //   // 初期化処理
+    //   count = 0
+    // });
+
+    test("1回目:countに10を足す。", () => {
+      const result = count + 10;
+      expect(result).toBe(10);
+    });
+
+    test("2回目:countに10を足す。", () => {
+      const result = count + 10;
+      expect(result).toBe(10);
+    });
+  })
 });
 // npm run test でテストを動かす。
 //常時動かしたい時は npm run test:watch
