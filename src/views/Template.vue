@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+import Mount from "@/components/Mount.vue"
+import Counter from "@/components/Counter.vue"
 </script>
 
 <template>
@@ -16,4 +17,8 @@
   <a href="https://reffect.co.jp/vue/vue-jest-test">参考サイト4</a>&nbsp;
   <hr>
   <h3>shallowMountメソッド の使い方</h3>
+  <Mount />
+  <hr>
+  <h3></h3>
+  <Counter message="こんにちは"/>
 </template>

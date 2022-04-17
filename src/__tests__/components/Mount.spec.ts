@@ -1,16 +1,16 @@
 export {};
 import { mount } from "@vue/test-utils";
 // テスト対象のコンポーネントをインポートする
-// import ShallowMount from "../../components/ShallowMount.vue";
+// import Mount from "../../components/Mount.vue";
 
-const ShallowMount = {
+const Mount = {
   template: "<div>ハロー</div>",
 };
 
 describe.only("components/ShallowMount.vueのテスト", () => {
   test("ハローの表示のテスト", () => {
     // vueファイルを読み込むイメージ
-    const wrapper = mount(ShallowMount);
+    const wrapper = mount(Mount);
     expect(wrapper.text()).toBe("ハロー");
   });
 });
