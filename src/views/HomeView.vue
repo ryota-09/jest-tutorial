@@ -5,6 +5,7 @@
 <template>
   <h1>\ Jest Tutorial ! /</h1>
   <h2>~ Vite, Vue3, TypeScript ~</h2>
+  <a href="https://vuesome.dev/articles/add-testing-to-vite/">環境構築の引用サイト</a>
   <br />
   <hr>
   <h3>そもそもテストって？</h3>
@@ -18,7 +19,9 @@
   <p>開発中の簡易テストはconsole.logで行っている。</p>
   <p>しかし、この方法では問題がある。</p>
   <p>コードの変更を加えた時、不具合がないか確認するために行うリグレッションテストができない。</p>
-  <a href="https://hnavi.co.jp/knowledge/blog/regression-test/">引用サイト</a>
+  <a href="https://hnavi.co.jp/knowledge/blog/regression-test/">引用サイト1</a>&nbsp;
+  <a href="https://www.codegrid.net/articles/js-test-1/">引用サイト2</a>&nbsp;
+  <a href="https://www.codegrid.net/articles/2016-unit-test-1/">引用サイト3</a>
   <p></p>
   <hr>
   <h3>Vueの単体テスト</h3>
