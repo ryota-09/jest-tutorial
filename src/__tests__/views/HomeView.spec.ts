@@ -1,7 +1,7 @@
 // グローバルファイルとして認識させる必要がある。
 export {};
 //describe("ここにテスト名", () => { テストの処理 })
-describe("HomeView.vueの単体テスト", () => {
+describe.only("HomeView.vueの単体テスト", () => {
   // test関数またはit関数が使える。
   test("num2に入る値のテスト", () => {
     const num1 = 1;
@@ -48,6 +48,14 @@ describe("HomeView.vueの単体テスト", () => {
     //   expect(object1).toBe(object2);
     // });
   });
+
+  describe("toBeTruetyのサンプルメソッド",() => {
+    test("frag2がtrueかどうかをテストする",() => {
+      const frag1 = true;
+      const frag2 = frag1;
+      expect(frag2).toBeTruthy();
+    })
+  })
 
   describe("beforeEachのサンプルメソッド",() => {
     let count = 0;
