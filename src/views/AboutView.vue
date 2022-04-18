@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import { useCountProvider } from "@/providers/useCountProvider"
+
+const countUp = ():number => {
+  return 1
+}
+
+</script>
+
 <template>
   <h1>mock関数について</h1>
   <p>テスト対象のメソッドの中にさらに、メソッドがあるとき、</p>
@@ -8,5 +17,4 @@
 </template>
 
 <style>
-
 </style>

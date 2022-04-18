@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Mount from "@/components/Mount.vue"
-import Counter from "@/components/Counter.vue"
+import Mount from "../components/Mount.vue"
+import Counter from "../components/Counter.vue"
 </script>
 
 <template>
